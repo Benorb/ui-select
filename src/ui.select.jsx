@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Dropdown from './DropDown';
 import './ui.select.css';
 
 class UISelect extends Component {
@@ -28,11 +29,11 @@ class UISelect extends Component {
   handleDownKey = (e) => {
     const { dropdownOpen } = this.state;
 
-    if(e.keyCode === 40 && !dropdownOpen){
+    if(e.keyCode === 40 && !dropdownOpen) {
       this.setState({ dropdownOpen: true })
     }
 
-    if(dropdownOpen){
+    if(dropdownOpen) {
       this.handleKeyboardNavigation(e)
     }
   }
@@ -110,11 +111,6 @@ class UISelect extends Component {
     this.refsArr[i] = ref;
   }
 
-  click = () => {
-    console.log(this.refsArr);
-    this.refsArr[4].scrollIntoView();
-  }
-
   render() {
     const { dropdownOpen, focusedIndex, selectedId  } = this.state;
     const { options } = this.props;
@@ -127,40 +123,24 @@ class UISelect extends Component {
         onBlur={ this.onBlur }
       >
         <div className="select" onClick={this.toggleSelect}>
-          <div className="text" id="hash">
+          <div className="text">
             {options.find((item) => item.id === selectedId).name}
             {/*If i could assume that the placeholder will always be the first value,
                so i would do {options[0].name}  */}
           </div>
-
           <div className={arrowDirection}/>
-
         </div>
 
         {
           dropdownOpen ?
-            <div>
-              <div className="triangle-up"/>
-              <div className="dropdown">
-                {/*<input type="hidden"/>*/}
-                {
-                  options.map((item, i) =>
-                  <div
-                    key={item.id}
-                    onMouseOver={(e) => this.onMouseOver(e,i)}
-                    onMouseOut={this.onMouseOut}
-                    ref={(ref) => this.setRef(ref, i)}
-                    className={`listRow ${focusedIndex === i ? 'active' : ''} ${item.id === null ? 'disabled' : ''}`}>
-                    <div
-                      className={`dropdown-text`}
-                      onClick={() => this.onSelectItem(item, i)}>
-                      {item.name}
-                    </div>
-                  </div>
-                  )
-                }
-              </div>
-            </div>
+            <Dropdown
+              options={options}
+              focusedIndex={focusedIndex}
+              onMouseOver={this.onMouseOver}
+              onMouseOut={this.onMouseOut}
+              setRef={this.setRef}
+              onSelectItem={this.onSelectItem}
+            />
             : null
         }
       </div>
