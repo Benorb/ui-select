@@ -18,11 +18,11 @@ class UISelect extends Component {
   }
   
   componentWillMount() {
-    document.addEventListener("keydown", this.handleDownKey, false);
+    document.addEventListener('keydown', this.handleDownKey, false);
   }
 
   componentWillUnmount() {
-    document.removeEventListener("keydown", this.handleDownKey, false);
+    document.removeEventListener('keydown', this.handleDownKey, false);
   }
 
   // Pressing DOWN key when UIControl is closed will open the dropdown
@@ -67,7 +67,7 @@ class UISelect extends Component {
   }
 
   scrollToIndex = (index) => {
-    this.refsArr[index].scrollIntoView({ block: "center", inline: "nearest" });
+    this.refsArr[index].scrollIntoView({ block: 'center', inline: 'nearest' });
   }
 
   onSelectItem = (item, i) => {
@@ -82,14 +82,14 @@ class UISelect extends Component {
   toggleSelect = () => {
     const { dropdownOpen } = this.state;
     if(dropdownOpen) {
-      // If the dropdown is currently opened, so its about to be closed.
+      // If the dropdown is currently opened, so its about to be closed, so we need to clear the focused index.
       this.clearFocusedIndex();
     }
     this.setState({dropdownOpen: !dropdownOpen});
   }
 
   // Click outside control should close it (in case it open)
-  // i used dropdownOpen && ... for the setState will happen only when the dropdown is opened.
+  // i used dropdownOpen && ... for the setState will happen only if the dropdown is opened.
   onBlur = () => {
     const { dropdownOpen } = this.state;
     dropdownOpen && this.setState({dropdownOpen: false});
@@ -118,15 +118,13 @@ class UISelect extends Component {
 
     return (
       <div
-        className="container"
+        className='container'
         tabIndex={0}
         onBlur={ this.onBlur }
       >
-        <div className="select" onClick={this.toggleSelect}>
-          <div className="text">
+        <div className='select' onClick={this.toggleSelect}>
+          <div className='text'>
             {options.find((item) => item.id === selectedId).name}
-            {/*If i could assume that the placeholder will always be the first value,
-               so i would do {options[0].name}  */}
           </div>
           <div className={arrowDirection}/>
         </div>

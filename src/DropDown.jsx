@@ -2,12 +2,11 @@ import React from 'react';
 import './dropdown.css';
 
 const Dropdown = ({ options, focusedIndex, onMouseOver, onMouseOut, setRef, onSelectItem }) => (
-  <div className="dd-container">
+  <div className='dd-container'>
 
-    <div className="triangle-up"/>
+    <div className='triangle-up'/>
 
-    <div className="dropdown">
-      {/*<input type="hidden"/>*/}
+    <div className='dropdown'>
       {
         options.map((item, i) =>
           <Item
