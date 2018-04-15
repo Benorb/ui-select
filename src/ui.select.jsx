@@ -10,7 +10,7 @@ class UISelect extends Component {
     this.refsArr = [];
 
     this.state = {
-      dropdownOpen: true,
+      dropdownOpen: false,
       focusedIndex: null,
       selectedId: null,
       mouseControl: false

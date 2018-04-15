@@ -31,8 +31,9 @@
     height: 0;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
-    border-bottom: 11px solid blue;
+    border-bottom: 11px solid black;
     position: relative;
+    align-self: center;
 }
 
 .triangle-up:after {
@@ -45,4 +46,9 @@
     position: absolute;
     left: -10px;
     top: 1px;
+}
+
+.dd-container{
+    display: flex;
+    flex-direction: column;
 }

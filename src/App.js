@@ -16,13 +16,13 @@ class App extends Component {
             </div>
           </div>
 
-            {/*<div className="row">*/}
-              {/*<UISelect options={data2}/>*/}
-            {/*</div>*/}
+            <div className="row">
+              <UISelect options={data2}/>
+            </div>
 
-            {/*<div className="row">*/}
-              {/*<UISelect options={data1}/>*/}
-            {/*</div>*/}
+            <div className="row">
+              <UISelect options={data1}/>
+            </div>
       </div>
     );
   }
