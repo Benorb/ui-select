@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bd68c63-90b7-4612-a336-fa4b6f1bf79e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DropDown.jsx" afterPath="$PROJECT_DIR$/src/DropDown.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dropdown.css" afterPath="$PROJECT_DIR$/src/dropdown.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui.select.css" afterPath="$PROJECT_DIR$/src/ui.select.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui.select.jsx" afterPath="$PROJECT_DIR$/src/ui.select.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +18,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ui.select.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ui.select.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui.select.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
@@ -48,8 +45,8 @@
       <file leaf-file-name="dropdown.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dropdown.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            <state relative-caret-position="437">
+              <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -59,17 +56,19 @@
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-              <folding />
+              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui.select.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ui.select.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ui.select.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="37" />
+            <state relative-caret-position="38">
+              <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -100,8 +99,8 @@
       <find>toggl</find>
       <find>options</find>
       <find>scroll</find>
-      <find>disabl</find>
       <find>arrow-up-list</find>
+      <find>disabl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,11 +115,11 @@
         <option value="$PROJECT_DIR$/src/dropdown.jsx.js" />
         <option value="$PROJECT_DIR$/src/dropdown.jsx" />
         <option value="$PROJECT_DIR$/src/Dropdown.jsx" />
-        <option value="$PROJECT_DIR$/src/ui.select.css" />
         <option value="$PROJECT_DIR$/src/DropDown.jsx" />
-        <option value="$PROJECT_DIR$/src/dropdown.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/ui.select.jsx" />
+        <option value="$PROJECT_DIR$/src/dropdown.css" />
+        <option value="$PROJECT_DIR$/src/ui.select.css" />
       </list>
     </option>
   </component>
@@ -318,12 +317,12 @@
       <updated>1523288947418</updated>
       <workItem from="1523288948910" duration="22427000" />
       <workItem from="1523525465833" duration="25000" />
-      <workItem from="1523708069936" duration="16672000" />
+      <workItem from="1523708069936" duration="18339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39124000" />
+    <option name="totallyTimeSpent" value="40791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -391,7 +390,7 @@
         <state relative-caret-position="152">
           <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -427,7 +426,7 @@
         <state relative-caret-position="266">
           <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -505,36 +504,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui.select.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dropdown.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DropDown.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -546,6 +531,22 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dropdown.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui.select.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

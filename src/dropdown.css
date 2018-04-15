@@ -13,7 +13,7 @@
 
 .dropdown{
     max-height: 300px;
-    border: 1px solid black;
+    border: 1px solid #aaa899;
     overflow: scroll;
 }
 
@@ -31,7 +31,7 @@
     height: 0;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
-    border-bottom: 11px solid black;
+    border-bottom: 11px solid #aaa899;
     position: relative;
     align-self: center;
 }

@@ -1,9 +1,8 @@
 .container:focus { outline: 0; }
 
 .select{
-    margin-top:20px;
     height: 25px;
-    border: 1px solid black;
+    border: 1px solid #aaa899;
     padding: 5px;
     display: flex;
     justify-content: space-between;
